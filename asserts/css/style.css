@@ -417,9 +417,7 @@ margin-top: 100px;
     font-weight: 700;
 }
 
-.destination__text{
 
-}
 .destination__container{
    
 width: 100%;
@@ -430,24 +428,247 @@ width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
+    padding-bottom: 30px;
 }
 
 .destination__item>img
 {
-    height: 100%;
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
-#ww_e1205d0c9ba79{
-    height: 100px;
-}
+
 .weatherwidget-io
 {
-    position: fixed;
+   
+    margin-top: 10px;
+}
+.tour__guide{
+    
+    padding-top:200px ;
+    border-bottom: 1px solid rgb(194, 190, 190);
+   
+    
+}
+.tour__guide__content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.tour__guide__title>span{
+    font-size: 30px;
+    font-weight: 600;
+   
+}
+
+.tour__guide__guider{
+display: flex;
+}
+.tour__guide__guider__img{
+position: relative;
+}
+
+.tour__guide__contact{
+    position: absolute;
+    display: flex;
+   width: 200px;
+   height: 45px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    top:60%;
+   left: 95px;
+   background-color: #6d6d6d;
+  
+   display: none;
+  
+}
+.tour__guide__guider__img:hover .tour__guide__contact
+{
+display: flex;
+animation: showInfoGuide 0.5s ease 1;
+
+    
+}
+.tour__guide__contact>span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #dde0e1;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+/* .tour__guide__contact>span:hover{
+    background-color:var(--primary-color) ;
+} */
+.tour__guide__contact>span:nth-child(1):hover
+{
+background-color: #0677e8;
+color: white;
+}
+.tour__guide__contact>span:nth-child(2):hover
+{
+    color: white;
+background-image: linear-gradient(to bottom,#cb00e0,#f49e19);
+}
+.tour__guide__contact>span:nth-child(3):hover
+{
+    color: #1d9bf0;
+background-color:white;
+}
+.tour__guide__contact>span:nth-child(4):hover
+{
+background-color:#1d9bf0;
+}
+@keyframes showInfoGuide{
+   from{
+transform: translateY(36px);
+   }
+   to{
+transform: translateY(0);
+   } 
+}
+.tour__guide__info{
+    display: flex;
+    justify-content: center;
+}
+.tour__guide__info>span{
+    font-size: 24px;
+    font-weight: 500;
+    }
+.footer{
+    width: 100%;
+    margin-top: 110px;
+    background-color: #2e3a3e;
+    
+}
+.footer__content__list
+{
+    display: flex;
+    padding:85px 0;
+    border-bottom: 2px solid rgb(207, 204, 204);
+}
+
+.footer__content__text{
+    
+    color: white;
     margin-top: 10px;
 }
 
+.footer__content__follow{
+color: white;
+font-weight: 600;
+font-size: 30px;
+}
+.footer__content__icon{
+position: relative;
+margin-top: 20px;
+}
+.footer__content__icon>span{
+  color: white;
+    padding: 5px 11px;  
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+.footer__content__icon>span:hover{
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+}
+.footer__content{
+    position: relative;
+}
+.footer__content__title
+{
+    
+    font-size: 30px;
+    font-weight: 600;
+  color: white;
+  margin: 0 auto;
+}
+
+.footer__item{
+color: white;
+cursor: pointer;
+}
+.footer__item:hover{
+animation:translateX 0.3s ease 1 ;
+transform: translateX(10px);
+}
+@keyframes translateX{
+    from{
+transform: translateX(0);
+    }
+    to{
+transform: translateX(10px);
+    }
+}
+.gallery{
+    display: flex;
+    justify-content: center;
+}
+
+.footer__content__gallery{
+margin-left: -8px;
+margin-right: -8px;
+position: absolute;
+bottom: 0;
+}
+.footer__content__gallery__img
+{
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.footerwidget{
+    width: 100%;
+   
+    background-color: #2e3a3e;
+    }
+.footerwidget__content__title{
+    color: white ;
+    font-size: 30px;
+    font-weight: 500;
+}
+.footerwidget__info__item
+{
+color: white;
+}
+
+.footerwidget__info__item>span
+{
+font-size: 20px;
+}
+.footerwidget__info__item>i
+{
+font-size: 20px;
+}
+
+.footerwidget__info__email
+{
+color: white;
+}
+
+.footerwidget__info__email>span
+{
+font-size: 20px;
+}
 
 
+.footerwidget__content__list{
+    }
+.footerwidget__content{
+    display: flex;
+    align-items: center;
+    }
+.footerwidget__content{
+    }
+.footerwidget__content{
+    }
+.footerwidget__content{
+    }
    

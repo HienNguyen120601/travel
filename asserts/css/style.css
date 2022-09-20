@@ -73,13 +73,9 @@ padding-right: 10px;
    display: flex;
     height: 100%;
     align-items: center;
-   
-
-
 }
 .nav__bar__menu__list{
     display: flex;
-
 }
 .nav__bar__menu__list>li
 {
@@ -179,7 +175,7 @@ width: 90%;
 padding-top: 35px;
 }
 .nav__bar__menuhide__logo>img{
-    height: 100%;
+   
     width: 100%;
 }
 .nav__bar__menuhide__list
@@ -312,6 +308,7 @@ position: relative;
     display: flex;
     z-index: 3;
     bottom: 20%;
+    
 }
 .top__banner__right__btn>button{
     margin-right: 7%;
@@ -417,8 +414,6 @@ border-radius: 50%;
 background-color: white;
 border: 1px solid rgb(201, 200, 200);
 z-index: 3;
-
-
 }
 .cagetory__content__link{
 color: #333;

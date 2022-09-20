@@ -64,6 +64,9 @@ font-size: 20px;
 
 @media (max-width:760px)
 {
+    .cagetory__content__item{
+        height: 150px;
+    }
 .tour__guide__guider
 {
     flex-direction: column;
@@ -85,11 +88,18 @@ font-size: 20px;
 }
 .top__banner__right__detail__content
 {
-    font-size: 16px;
-    
-    
+    font-size: 16px;  
 }
-
+.cagetory{
+    width: 100%;
+}
+.footerwidget__info__item>span
+{
+font-size: 14px;
+}
+.footerwidget__info__item>i{
+    font-size: 14px;
+}
 .top__banner__right__btn{
     bottom: 10%;
 }
@@ -97,18 +107,41 @@ font-size: 20px;
 @media (max-width:480px)
 {
     
-    .top__banner__right__detail__content
+.nav__bar__logo
 {
+    width: 150px !important;
+ 
+}
+.nav__bar__logo>img
+{
+    width: 100%;
+}
+.top__banner__right__detail__content
+{
+    display: none;   
+}
+.footerwidget__info__item>span
+{
+font-size: 12px;
+}
+.footerwidget__info__item>i{
     display: none;
-    
-    
 }
 .footer__content__follow{
     font-size: 26px;
 }
+.footerwidget__content__title{
+    font-size: 12px;
+}
 }
 @media (max-width:360px){
-.top__banner__right__detail__title{
+    .nav__bar__menuhide{
+        width: 100%;
+    }
+   .cagetory__content__item{
+height: 130px;
+    }
+    .top__banner__right__detail__title{
     font-size: 25px;
     font-weight: 400;
 }

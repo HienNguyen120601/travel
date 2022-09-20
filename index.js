@@ -15,5 +15,21 @@ function closeCagetory() {
 
 
     }
+}
+function closeMenu() {
+    var menuHide = document.querySelector('.menuhide__wrap')
+
+    if (menuHide) {
+        menuHide.classList.remove('showMenu')
+        menuHide.classList.add('closeMenu')
+    }
+
+}
+function showMenu() {
+    var menuHide = document.querySelector('.menuhide__wrap')
+    if (menuHide) {
+        menuHide.classList.add('showMenu')
+        menuHide.classList.remove('closeMenu')
+    }
 
 }

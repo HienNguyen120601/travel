@@ -17,22 +17,23 @@ function closeCagetory() {
 
     }
 }
-function closeMenu() {
-    var menuHide = document.querySelector('.menuhide__wrap')
 
-    if (menuHide) {
-        menuHide.classList.remove('showMenu')
-        menuHide.classList.add('closeMenu')
-        window.onscroll = function () { };
-    }
-
-}
 function showMenu() {
     var menuHide = document.querySelector('.menuhide__wrap')
     if (menuHide) {
         menuHide.classList.add('showMenu')
         menuHide.classList.remove('closeMenu')
         window.onscroll = function () { window.scrollTo(0, 0); };
+    }
+    if (menuHide) {
+
+        menuHide.addEventListener('click', function () {
+            menuHide.classList.remove('showMenu')
+            menuHide.classList.add('closeMenu')
+            window.onscroll = function () { };
+        })
+
+
     }
 
 

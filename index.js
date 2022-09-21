@@ -19,22 +19,22 @@ function closeCagetory() {
 }
 
 function showMenu() {
-    var menuHide = document.querySelector('.menuhide__wrap')
+    var menuHide = document.querySelector('.menuhide')
+    var menuHideWrap = document.querySelector('.menuhide__wrap')
     if (menuHide) {
+
         menuHide.classList.add('showMenu')
         menuHide.classList.remove('closeMenu')
         window.onscroll = function () { window.scrollTo(0, 0); };
     }
-    if (menuHide) {
+    if (menuHideWrap) {
+        menuHideWrap.addEventListener('click', function () {
 
-        menuHide.addEventListener('click', function () {
+
             menuHide.classList.remove('showMenu')
             menuHide.classList.add('closeMenu')
             window.onscroll = function () { };
         })
-
-
     }
-
 
 }

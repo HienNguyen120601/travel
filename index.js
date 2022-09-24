@@ -1,5 +1,7 @@
 
 var cagetory = document.querySelector('.cagetory__wrap')
+var apiTour = 'https://632d7be60d7928c7d24c1655.mockapi.io/Tour'
+
 function showCagetory() {
 
     if (cagetory) {
@@ -38,3 +40,58 @@ function showMenu() {
     }
 
 }
+function onLoad() {
+    getTours(function (tours) {
+        renderTour(tours)
+    })
+
+}
+function getTours(callback) {
+    fetch(apiTour).then(function (reponse) {
+        return reponse.json()
+    })
+        .then(callback)
+        .catch(function () {
+            alert("Có lỗi vui lòng reload")
+        })
+}
+function renderTour(tours) {
+    var tourBlock = document.querySelector('.container')
+    var tourPackage = tourBlock.querySelector('.row')
+
+    var htmls = tours.map(function (tour) {
+        return `
+        <div class="container__package col l-4 ms-6 s-12 ">
+                    <div class="container__package__img">
+                        <img src="./asserts/img/travel/${tour.img}" alt="">
+                        <div class="container__package__day"><span>${tour.numberofday}</span></div>
+                    </div>
+                    <a href="" class="container__package__detail">
+                        ${tour.title}
+                    </a>
+                    <div class="container__package__footer">
+                        <button onclick="showTourDetail(this);" data-id="${tour.id}" class="container__package__book">
+                      BOOK NOW
+                        </button>
+                        <div class="container__package__price">From</br>
+                            <span>${tour.price}</span>
+                        </div>
+                    </div>
+                </div>`
+    })
+    tourPackage.innerHTML = htmls.join('')
+
+}
+
+function showTourDetail(booking) {
+    window.location = './cagetory.html'
+
+    var id = booking.getAttribute('data-id')
+    console.log(id)
+    localStorage.setItem("detail", id)
+}
+
+onLoad()
+
+
+
